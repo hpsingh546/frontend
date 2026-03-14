@@ -1,6 +1,6 @@
 import { DashboardData, DateRange } from '../types';
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const BASE_URL = 'http://localhost:5000/api';
 
 export async function fetchStates(): Promise<string[]> {
   const res = await fetch(`${BASE_URL}/states`);
